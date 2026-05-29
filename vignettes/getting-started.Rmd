@@ -1,0 +1,93 @@
+---
+
+title: "Getting Started with hamstringArchitecture"
+output: rmarkdown::html_vignette
+vignette: >
+%\VignetteIndexEntry{Getting Started with hamstringArchitecture}
+%\VignetteEngine{knitr::rmarkdown}
+\usepackage[utf8]{inputenc}
+---------------------------
+
+# Introduction
+
+The `hamstringArchitecture` package provides an interactive workflow for analysing ultrasound-derived hamstring muscle architecture.
+
+The package allows users to manually identify anatomical landmarks on ultrasound images and calculate:
+
+* Pennation Angle (degrees)
+* Muscle Thickness (mm)
+* Fascicle Length (mm)
+
+# Running the Analysis
+
+Load the package:
+
+```r
+library(hamstringArchitecture)
+```
+
+Launch the analysis workflow:
+
+```r
+results <- run_hamstring_analysis()
+```
+
+# Workflow
+
+## Step 1: Select Ultrasound Images
+
+The user selects one or more ultrasound images for analysis.
+
+Supported image formats include JPEG and bitmap images.
+
+## Step 2: Select Anatomical Landmarks
+
+For each image, six landmarks are selected:
+
+1. Superficial aponeurosis start
+2. Superficial aponeurosis end
+3. Deep aponeurosis start
+4. Deep aponeurosis end
+5. Fascicle start
+6. Fascicle end
+
+If the selected points are incorrect, the user can repeat the selection process.
+
+## Step 3: Select Scan Depth
+
+The user selects the ultrasound scan depth used during image acquisition.
+
+Available options:
+
+* 45 mm
+* 60 mm
+* 70 mm
+* 80 mm
+* 90 mm
+
+# Output
+
+The package returns a data frame containing:
+
+* Player
+* Side
+* State
+* Image
+* Depth
+* Pennation Angle
+* Muscle Thickness
+* Fascicle Length
+
+Results are also exported to an Excel workbook.
+
+# Applications
+
+The package was developed to support research and athlete monitoring involving ultrasound-derived muscle architecture assessment.
+
+Potential applications include:
+
+* Longitudinal monitoring
+* Injury rehabilitation
+* Return-to-play assessment
+* Athlete profiling
+* Research studies

@@ -1,0 +1,20 @@
+Package: hamstringArchitecture
+Title: Interactive Analysis of Hamstring Muscle Architecture
+Version: 0.1.0
+Authors@R: 
+    person("Jimmy", "McDaniel", email = "ptwjimmy@gmail.com", role = c("aut", "cre"))
+Description: Provides an interactive workflow for analysing ultrasound images of hamstring muscle architecture, including pennation angle, muscle thickness, and fascicle length.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    jpeg,
+    readbitmap,
+    writexl,
+    tcltk
+Config/roxygen2/version: 8.0.0
+devtools: :document()
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
