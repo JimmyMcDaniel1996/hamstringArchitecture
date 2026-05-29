@@ -18,3 +18,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/JimmyMcDaniel1996/hamstringArchitecture
+BugReports: https://github.com/JimmyMcDaniel1996/hamstringArchitecture/issues
