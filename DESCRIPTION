@@ -13,7 +13,6 @@ Imports:
     writexl,
     tcltk
 Config/roxygen2/version: 8.0.0
-devtools: :document()
 Suggests: 
     knitr,
     rmarkdown
